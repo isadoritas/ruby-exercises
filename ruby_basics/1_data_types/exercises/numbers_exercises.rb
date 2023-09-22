@@ -1,36 +1,49 @@
-def add(a, b)
-  # return the result of adding a and b
-  a + b
+def concatenate_example(string)
+  # use concatenation to format the result to be "Classic <string>"
+  "Classic " << string
 end
 
-def subtract(a, b)
-  # return the result of subtracting b from a
+def concatenate(string)
+  # use concatenation to format the result to be "Hello <string>!"
+  result = "Hello #{string}!"
 end
 
-def multiply(a, b)
-  # return the result of multiplying a times b
+def substrings(word)
+  # return the first 4 letters from the word using substrings
+  word[0,4]
 end
 
-def divide(a, b)
-  # return the result of dividing a by b
+def capitalize(word)
+  # capitalize the first letter of the word
+  word.capitalize
 end
 
-def remainder(a, b)
-  # return the remainder of dividing a by b using the modulo operator
+def uppercase(string)
+  # uppercase all letters in the string
+  string.upcase
 end
 
-def float_division(a, b)
-  # return the result of dividing a by b as a float, rather than an integer
+def downcase(string)
+  # downcase all letters in the string
+  string.downcase
 end
 
-def string_to_number(string)
-  # return the result of converting a string into an integer
+def empty_string(string)
+  # return true if the string is empty
+  string.empty?
 end
 
-def even?(number)
-  # return true if the number is even (hint: use integer's even? method)
+def string_length(string)
+  # return the length of the string
+  string.length
 end
 
-def odd?(number)
-  # return true if the number is odd (hint: use integer's odd? method)
+def reverse(string)
+  # return the same string, with all of its characters reversed
+  string.reverse
+end
+
+def space_remover(string)
+  # remove all the spaces in the string using gsub
+  string.gsub(/\s+/, "")
 end
